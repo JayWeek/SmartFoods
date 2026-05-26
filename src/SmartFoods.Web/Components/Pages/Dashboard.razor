@@ -1,6 +1,11 @@
 @page "/dashboard"
 @layout MainLayout
 
+@using SmartFoods.Web.Services.Pantry
+
+@inject PantryService PantryService
+@inject Microsoft.AspNetCore.Components.Authorization.AuthenticationStateProvider AuthenticationStateProvider
+
 <PageTitle>SmartFoods | Dashboard</PageTitle>
 
 <DashboardShell>
@@ -26,7 +31,7 @@
         <div class="sf-stats-grid">
             <div class="sf-stat-card">
                 <div class="sf-stat-title">Total Pantry Items</div>
-                <div class="sf-stat-value">24</div>
+                <div class="sf-stat-value">@(TotalItems)</div>
                 <div class="sf-stat-caption">Nicely stocked</div>
             </div>
 
@@ -215,3 +220,18 @@
         </div>
     </section>
 </DashboardShell>
+
+@code {
+   private int TotalItems;
+
+   protected override async Task OnInitializedAsync()
+   {
+       var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+       var userId = authState.User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+       if (userId != null)
+       {
+           TotalItems = await PantryService.GetTotalItemsAsync(userId);
+       }
+   }
+}
