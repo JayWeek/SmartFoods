@@ -1,0 +1,32 @@
+.sf-pantry-hero,
+.sf-pantry-summary-card,
+.sf-pantry-category-card,
+.sf-pantry-item-card {
+    border-radius: 1.45rem !important;
+    border: 1px solid rgba(15,23,42,.05) !important;
+    box-shadow: 0 10px 28px rgba(15,23,42,.05) !important;
+}
+
+.sf-pantry-hero {
+    padding: 1.8rem !important;
+}
+
+.sf-pantry-search {
+    min-height: 3.5rem;
+    background: rgba(255,255,255,.96) !important;
+}
+
+.sf-pantry-item-card {
+    background: rgba(255,255,255,.92) !important;
+    transition: .22s ease;
+}
+
+.sf-pantry-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 38px rgba(15,23,42,.08) !important;
+}
+
+.sf-pantry-category-icon,
+.sf-pantry-item-icon {
+    background: #f3faf4 !important;
+}

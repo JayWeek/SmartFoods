@@ -1,0 +1,198 @@
+.sf-dashboard-shell {
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top right, rgba(163,230,183,.18), transparent 24%),
+        linear-gradient(180deg, #fbfefd 0%, #f4f8f5 100%);
+    color: #0f172a;
+}
+
+.sf-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: rgba(255,255,255,.82);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(15,23,42,.06);
+}
+
+.sf-brand {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+}
+
+.sf-brand-logo {
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: .95rem;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #1ea44f, #78d79a);
+    box-shadow: 0 12px 24px rgba(34,197,94,.14);
+}
+
+.sf-brand-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -.02em;
+}
+
+.sf-brand-subtitle {
+    font-size: .78rem;
+    color: #64748b;
+}
+
+.sf-user-menu {
+    position: relative;
+}
+
+.sf-user-trigger {
+    border: 1px solid rgba(15,23,42,.05);
+    background: rgba(255,255,255,.92);
+    border-radius: 1rem;
+    padding: .55rem .8rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    box-shadow: 0 8px 22px rgba(15,23,42,.04);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.sf-user-trigger:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px rgba(15,23,42,.06);
+}
+
+.sf-user-avatar {
+    width: 2.35rem;
+    height: 2.35rem;
+    border-radius: 50%;
+    background: #dcfce7;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: #15803d;
+}
+
+.sf-user-meta {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sf-user-label {
+    font-size: .7rem;
+    color: #64748b;
+}
+
+.sf-user-name {
+    font-size: .92rem;
+    font-weight: 600;
+}
+
+.sf-user-dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + .75rem);
+    background: white;
+    border-radius: 1rem;
+    padding: .85rem 1rem;
+    min-width: 140px;
+    border: 1px solid rgba(15,23,42,.05);
+    box-shadow: 0 18px 40px rgba(15,23,42,.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: .22s ease;
+}
+
+.sf-user-dropdown a {
+    color: #334155;
+    font-weight: 500;
+}
+
+.sf-user-menu:hover .sf-user-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sf-sidebar {
+    display: none;
+}
+
+.sf-main {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
+
+@media (min-width: 1100px) {
+    .sf-sidebar {
+        position: fixed;
+        inset: 0 auto 0 0;
+        width: 288px;
+        padding: 6rem 1.25rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(180deg, #f8fdf9 0%, #eff6f1 100%);
+        border-right: 1px solid rgba(15,23,42,.06);
+    }
+
+    .sf-topbar {
+        padding-left: 308px;
+    }
+
+    .sf-main {
+        margin-left: 288px;
+        padding: 2rem;
+    }
+
+    .sf-sidebar-nav {
+        display: flex;
+        flex-direction: column;
+        gap: .55rem;
+    }
+
+    .sf-nav-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 3.4rem;
+        padding: .95rem 1rem;
+        border-radius: 1rem;
+        border: 1px solid transparent;
+        color: #475569;
+        font-size: .96rem;
+        font-weight: 500;
+        transition: background .2s ease, border-color .2s ease, color .2s ease, box-shadow .2s ease;
+    }
+
+    .sf-nav-link:hover {
+        background: rgba(255,255,255,.75);
+        border-color: rgba(15,23,42,.05);
+        color: #0f172a;
+    }
+
+    .sf-nav-active {
+        background: rgba(255,255,255,.96);
+        border: 1px solid rgba(34,197,94,.16);
+        color: #166534;
+        font-weight: 600;
+        box-shadow: 0 12px 24px rgba(15,23,42,.05);
+    }
+
+    .sf-nav-active::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 1rem;
+        box-shadow: inset 0 0 0 1px rgba(34,197,94,.12);
+        pointer-events: none;
+    }
+}

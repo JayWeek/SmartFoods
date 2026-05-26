@@ -1,0 +1,33 @@
+.sf-saved-hero,
+.sf-favorite-card,
+.sf-collection-card,
+.sf-recent-save-row {
+    border-radius: 1.45rem !important;
+    border: 1px solid rgba(15,23,42,.05) !important;
+    box-shadow: 0 10px 30px rgba(15,23,42,.05) !important;
+}
+
+.sf-saved-hero {
+    padding: 1.8rem !important;
+}
+
+.sf-favorite-card {
+    transition: .22s ease;
+}
+
+.sf-favorite-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 18px 40px rgba(15,23,42,.08) !important;
+}
+
+.sf-favorite-overlay {
+    padding: 1.1rem 1.2rem !important;
+}
+
+.sf-collection-card {
+    background: rgba(255,255,255,.92) !important;
+}
+
+.sf-recent-save-row {
+    background: rgba(255,255,255,.9) !important;
+}

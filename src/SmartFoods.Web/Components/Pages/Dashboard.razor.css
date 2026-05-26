@@ -1,0 +1,46 @@
+.sf-dashboard-page,
+.sf-section {
+    animation: sfFade .25s ease;
+}
+
+.sf-dashboard-hero,
+.sf-overview-card,
+.sf-dashboard-summary-card,
+.sf-dashboard-list-card {
+    border-radius: 1.4rem !important;
+    border: 1px solid rgba(15,23,42,.05) !important;
+    box-shadow: 0 10px 30px rgba(15,23,42,.05) !important;
+    background: rgba(255,255,255,.9) !important;
+}
+
+.sf-dashboard-hero {
+    padding: 1.8rem !important;
+}
+
+.sf-dashboard-hero h1,
+.sf-section h2 {
+    letter-spacing: -.03em;
+}
+
+.sf-dashboard-grid,
+.sf-dashboard-summary-grid {
+    gap: 1rem !important;
+}
+
+.sf-dashboard-list-row:hover,
+.sf-dashboard-summary-card:hover,
+.sf-overview-card:hover {
+    transform: translateY(-2px);
+    transition: .2s ease;
+}
+
+@keyframes sfFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

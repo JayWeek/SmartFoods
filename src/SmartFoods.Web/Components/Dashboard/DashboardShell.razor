@@ -1,0 +1,61 @@
+<div class="sf-dashboard-shell">
+
+    <header class="sf-topbar">
+        <div class="sf-brand">
+            <div class="sf-brand-logo">🌿</div>
+
+            <div>
+                <div class="sf-brand-name">SmartFoods</div>
+                <div class="sf-brand-subtitle">Waste-free kitchen</div>
+            </div>
+        </div>
+
+        <div class="sf-user-menu">
+            <button class="sf-user-trigger">
+                <div class="sf-user-avatar">J</div>
+
+                <div class="sf-user-meta">
+                    <span class="sf-user-label">Welcome back</span>
+                    <span class="sf-user-name">Jayweek</span>
+                </div>
+            </button>
+
+            <div class="sf-user-dropdown">
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sf-sidebar">
+        <nav class="sf-sidebar-nav" aria-label="Dashboard navigation">
+            <NavLink href="/dashboard" Match="NavLinkMatch.All" class="sf-nav-link" ActiveClass="sf-nav-active">
+                Overview
+            </NavLink>
+            <NavLink href="/dashboard/expire" class="sf-nav-link" ActiveClass="sf-nav-active">
+                Expiring Soon
+            </NavLink>
+            <NavLink href="/dashboard/recipes" class="sf-nav-link" ActiveClass="sf-nav-active">
+                Suggested Recipes
+            </NavLink>
+            <NavLink href="/dashboard/pantry" class="sf-nav-link" ActiveClass="sf-nav-active">
+                Pantry
+            </NavLink>
+            <NavLink href="/dashboard/saved-recipes" class="sf-nav-link" ActiveClass="sf-nav-active">
+                Saved Recipes
+            </NavLink>
+            <NavLink href="/dashboard/insights" class="sf-nav-link" ActiveClass="sf-nav-active">
+                Weekly Insights
+            </NavLink>
+        </nav>
+    </aside>
+
+    <main class="sf-main">
+        @ChildContent
+    </main>
+
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

@@ -1,0 +1,30 @@
+# Ignore build and compilation outputs
+src/**/bin/
+src/**/obj/
+tests/**/bin/
+tests/**/obj/
+
+# Ignore local environment secrets and configurations
+**/.env
+**/appsettings.Development.json
+**/.usersecrets/
+
+# Ignore IDE specific files
+**/.vs/
+**/.vscode/
+**/.idea/
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore frontend node packages and static compiled assets
+**/node_modules/
+src/SmartFoods.Web/wwwroot/lib/
+
+# Ignore documentation drafts (keep only final plans)
+docs/scraps/
+docs/old_ideas/
+
+# Ignore system files
+**.DS_Store
+Thumbs.db

@@ -1,0 +1,129 @@
+@page "/dashboard/saved-recipes"
+@layout MainLayout
+
+<PageTitle>SmartFoods | Saved Recipes</PageTitle>
+
+<DashboardShell>
+    <section class="sf-saved-mode">
+        <div class="sf-saved-hero">
+            <div class="sf-saved-hero-copy">
+                <div class="sf-page-kicker">Personal recipe collection</div>
+                <h1>Your favorite meals, gathered like a thoughtful meal-planning board.</h1>
+                <p>
+                    Keep the recipes you trust close, organize them by mood or purpose, and come back to them when you want less friction and more inspiration.
+                </p>
+            </div>
+
+            <div class="sf-saved-hero-badge">
+                <div class="sf-saved-hero-badge-label">Saved this week</div>
+                <div class="sf-saved-hero-badge-value">5 recipes</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Favorite Recipes Grid</div>
+                <h2>Your most-loved meals</h2>
+            </div>
+        </div>
+
+        <div class="sf-favorites-grid">
+            <article class="sf-favorite-card sf-favorite-card-large">
+                <img src="images/recipe1.svg" alt="Saved favorite recipe" />
+
+                <div class="sf-favorite-overlay">
+                    <div class="sf-favorite-tag">Weeknight favorite</div>
+                    <h3>Pasta Primavera</h3>
+                    <p>Bright, flexible, and easy to adapt with whatever vegetables are already in the pantry.</p>
+                </div>
+            </article>
+
+            <article class="sf-favorite-card">
+                <img src="images/recipe2.svg" alt="Saved favorite stir fry recipe" />
+
+                <div class="sf-favorite-overlay sf-favorite-overlay-compact">
+                    <div class="sf-favorite-tag">Fast dinner</div>
+                    <h3>Fresh Stir Fry</h3>
+                </div>
+            </article>
+
+            <article class="sf-favorite-card sf-favorite-card-illustrated">
+                <div class="sf-favorite-illustration">🥣</div>
+
+                <div class="sf-favorite-overlay sf-favorite-overlay-compact">
+                    <div class="sf-favorite-tag">Comfort</div>
+                    <h3>Creamy Pantry Soup</h3>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Collections</div>
+                <h2>Organize by planning style</h2>
+            </div>
+        </div>
+
+        <div class="sf-collections-strip">
+            <article class="sf-collection-card">
+                <div class="sf-collection-title">Quick Weeknights</div>
+                <div class="sf-collection-count">8 recipes</div>
+                <p>Low-effort meals for busy evenings and short decision windows.</p>
+            </article>
+
+            <article class="sf-collection-card sf-collection-card-warm">
+                <div class="sf-collection-title">Use Pantry First</div>
+                <div class="sf-collection-count">5 recipes</div>
+                <p>Ideas designed to reduce shopping and make the most of what is already at home.</p>
+            </article>
+
+            <article class="sf-collection-card sf-collection-card-soft">
+                <div class="sf-collection-title">Comfort Meals</div>
+                <div class="sf-collection-count">6 recipes</div>
+                <p>Reliable bowls, soups, and toast-based dinners for calmer cooking nights.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Recently Saved</div>
+                <h2>What you captured lately</h2>
+            </div>
+        </div>
+
+        <div class="sf-recent-saves-list">
+            <article class="sf-recent-save-row">
+                <div class="sf-recent-save-icon">🍳</div>
+                <div class="sf-recent-save-body">
+                    <div class="sf-recent-save-title">Roasted Veggie Bowl</div>
+                    <div class="sf-recent-save-meta">Saved yesterday · Healthy · 22 min</div>
+                </div>
+                <span class="sf-recent-save-status">Ready</span>
+            </article>
+
+            <article class="sf-recent-save-row">
+                <div class="sf-recent-save-icon">🥪</div>
+                <div class="sf-recent-save-body">
+                    <div class="sf-recent-save-title">Creamy Mushroom Toast</div>
+                    <div class="sf-recent-save-meta">Saved 2 days ago · Comfort · 12 min</div>
+                </div>
+                <span class="sf-recent-save-status">Favorite</span>
+            </article>
+
+            <article class="sf-recent-save-row">
+                <div class="sf-recent-save-icon">🌮</div>
+                <div class="sf-recent-save-body">
+                    <div class="sf-recent-save-title">Veggie Tacos</div>
+                    <div class="sf-recent-save-meta">Saved this week · Quick meal · 20 min</div>
+                </div>
+                <span class="sf-recent-save-status">New</span>
+            </article>
+        </div>
+    </section>
+</DashboardShell>

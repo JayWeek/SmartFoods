@@ -1,0 +1,36 @@
+.sf-recipes-hero,
+.sf-recipe-card,
+.sf-recipes-filter-bar {
+    border-radius: 1.45rem !important;
+    border: 1px solid rgba(15,23,42,.05) !important;
+    box-shadow: 0 10px 28px rgba(15,23,42,.05) !important;
+}
+
+.sf-recipes-hero {
+    padding: 1.8rem !important;
+}
+
+.sf-recipe-card {
+    overflow: hidden;
+    background: rgba(255,255,255,.92) !important;
+    transition: .22s ease;
+}
+
+.sf-recipe-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(15,23,42,.08) !important;
+}
+
+.sf-recipe-card img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.sf-recipe-content {
+    padding: 1.1rem !important;
+}
+
+.sf-recipes-filter-pill-active {
+    background: rgba(34,197,94,.1) !important;
+    border-color: rgba(34,197,94,.14) !important;
+}

@@ -1,0 +1,185 @@
+@page "/dashboard/recipes"
+@layout MainLayout
+
+<PageTitle>SmartFoods | Suggested Recipes</PageTitle>
+
+<DashboardShell>
+    <section class="sf-recipes-workspace">
+        <div class="sf-recipes-hero">
+            <div class="sf-recipes-hero-copy">
+                <div class="sf-page-kicker">Meal inspiration mode</div>
+                <h1>Discover meals from what is already in your kitchen.</h1>
+                <p>
+                    Explore recipes that match your pantry, reduce extra shopping, and make cooking feel lighter and more creative.
+                </p>
+            </div>
+
+            <div class="sf-recipes-hero-note">
+                <div class="sf-recipes-note-label">Today’s best angle</div>
+                <div class="sf-recipes-note-title">Use pantry ingredients before buying more.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-recipes-search-wrap">
+            <input class="sf-recipes-search" placeholder="Search recipes..." />
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header sf-recipes-section-header">
+            <div>
+                <div class="sf-section-kicker">Recipe Match Filters</div>
+                <h2>Find the right cooking mood</h2>
+            </div>
+        </div>
+
+        <div class="sf-filter-row sf-recipes-filter-row">
+            <button class="sf-filter-pill sf-recipes-filter-pill sf-recipes-filter-pill-active">Best Match</button>
+            <button class="sf-filter-pill sf-recipes-filter-pill">Quick Meals</button>
+            <button class="sf-filter-pill sf-recipes-filter-pill">Healthy</button>
+            <button class="sf-filter-pill sf-recipes-filter-pill">Vegetarian</button>
+            <button class="sf-filter-pill sf-recipes-filter-pill">Uses Expiring Items</button>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Recipe Grid</div>
+                <h2>Cook from what you already have</h2>
+            </div>
+        </div>
+
+        <div class="sf-suggested-grid">
+            <article class="sf-suggested-card">
+                <img src="images/recipe1.svg" alt="Pasta primavera recipe illustration" />
+
+                <div class="sf-suggested-card-body">
+                    <div class="sf-suggested-meta-row">
+                        <span class="sf-suggested-match">92% match</span>
+                        <span class="sf-suggested-time">18 min</span>
+                    </div>
+
+                    <h3>Pasta Primavera</h3>
+
+                    <div class="sf-suggested-details">
+                        <span>Easy</span>
+                        <span>Pantry-friendly</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-suggested-card">
+                <img src="images/recipe2.svg" alt="Fresh stir fry recipe illustration" />
+
+                <div class="sf-suggested-card-body">
+                    <div class="sf-suggested-meta-row">
+                        <span class="sf-suggested-match">85% match</span>
+                        <span class="sf-suggested-time">15 min</span>
+                    </div>
+
+                    <h3>Fresh Stir Fry</h3>
+
+                    <div class="sf-suggested-details">
+                        <span>Easy</span>
+                        <span>Vegetarian</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-suggested-card">
+                <div class="sf-suggested-illustration">🥣</div>
+
+                <div class="sf-suggested-card-body">
+                    <div class="sf-suggested-meta-row">
+                        <span class="sf-suggested-match">78% match</span>
+                        <span class="sf-suggested-time">28 min</span>
+                    </div>
+
+                    <h3>Creamy Pantry Soup</h3>
+
+                    <div class="sf-suggested-details">
+                        <span>Medium</span>
+                        <span>Comfort meal</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-suggested-card">
+                <div class="sf-suggested-illustration sf-suggested-illustration-warm">🌮</div>
+
+                <div class="sf-suggested-card-body">
+                    <div class="sf-suggested-meta-row">
+                        <span class="sf-suggested-match">74% match</span>
+                        <span class="sf-suggested-time">20 min</span>
+                    </div>
+
+                    <h3>Veggie Tacos</h3>
+
+                    <div class="sf-suggested-details">
+                        <span>Easy</span>
+                        <span>Quick meal</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Recipe Categories</div>
+                <h2>Browse by what feels right today</h2>
+            </div>
+        </div>
+
+        <div class="sf-category-grid">
+            <div class="sf-category-card">
+                <div class="sf-category-icon">⚡</div>
+                <h3>Quick Weeknight</h3>
+                <p>Fast dinners for when the pantry needs to work harder than your schedule.</p>
+            </div>
+
+            <div class="sf-category-card">
+                <div class="sf-category-icon">🥗</div>
+                <h3>Fresh & Healthy</h3>
+                <p>Lighter meals built around vegetables, pantry staples, and low shopping effort.</p>
+            </div>
+
+            <div class="sf-category-card">
+                <div class="sf-category-icon">🌿</div>
+                <h3>Vegetarian</h3>
+                <p>Flexible ideas that make produce and simple ingredients feel more exciting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Saved Recipes Preview</div>
+                <h2>Reliable favorites, ready when you need them</h2>
+            </div>
+        </div>
+
+        <div class="sf-saved-preview">
+            <div class="sf-saved-preview-card">
+                <div>
+                    <div class="sf-saved-preview-title">Roasted Veggie Bowl</div>
+                    <div class="sf-saved-preview-meta">Healthy · 22 min · Great with pantry vegetables</div>
+                </div>
+                <span class="sf-saved-preview-badge">Saved</span>
+            </div>
+
+            <div class="sf-saved-preview-card">
+                <div>
+                    <div class="sf-saved-preview-title">Creamy Mushroom Toast</div>
+                    <div class="sf-saved-preview-meta">Comfort meal · 12 min · Best for low-effort nights</div>
+                </div>
+                <span class="sf-saved-preview-badge">Saved</span>
+            </div>
+        </div>
+    </section>
+</DashboardShell>

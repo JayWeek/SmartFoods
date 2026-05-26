@@ -1,0 +1,13 @@
+<div class="waste-chart-shell">
+    <MudChart T="double" ChartType="ChartType.Pie"
+              ChartSeries="@_pieSeries"
+              ChartLabels="@_pieLabels"
+              Width="100%"
+              Height="180px" />
+</div>
+
+@code {
+    private readonly List<ChartSeries<double>> _pieSeries = new double[] { 60, 25, 15 }.AsChartDataSet();
+
+    private readonly string[] _pieLabels = ["Used", "Saved", "Wasted"];
+}

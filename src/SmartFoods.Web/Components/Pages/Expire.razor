@@ -1,0 +1,167 @@
+@page "/dashboard/expire"
+@layout MainLayout
+
+<PageTitle>SmartFoods | Expiring Soon</PageTitle>
+
+<DashboardShell>
+    <section class="sf-expire-workspace">
+        <div class="sf-expire-summary">
+            <div class="sf-expire-summary-copy">
+                <div class="sf-page-kicker">Take action now</div>
+                <h1>6 ingredients need attention.</h1>
+                <p>
+                    2 expire tomorrow. Start with the shortest timelines and turn them into meals before they become waste.
+                </p>
+            </div>
+
+            <div class="sf-expire-summary-stats">
+                <div class="sf-expire-stat">
+                    <span class="sf-expire-stat-value">2</span>
+                    <span class="sf-expire-stat-label">Expire tomorrow</span>
+                </div>
+
+                <div class="sf-expire-stat">
+                    <span class="sf-expire-stat-value">4</span>
+                    <span class="sf-expire-stat-label">Need planning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header sf-expire-section-header">
+            <div>
+                <div class="sf-section-kicker">Expiry Timeline</div>
+                <h2>Prioritize by time</h2>
+            </div>
+        </div>
+
+        <div class="sf-filter-row">
+            <button class="sf-filter-pill sf-filter-pill-active">Tomorrow</button>
+            <button class="sf-filter-pill">2 Days</button>
+            <button class="sf-filter-pill">3 Days</button>
+            <button class="sf-filter-pill">All</button>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Urgent Ingredients</div>
+                <h2>What should be used first</h2>
+            </div>
+        </div>
+
+        <div class="sf-expire-card-list">
+            <article class="sf-expire-ingredient-card sf-expire-danger">
+                <div class="sf-expire-accent"></div>
+
+                <div class="sf-expire-ingredient-icon">🥛</div>
+
+                <div class="sf-expire-ingredient-body">
+                    <div class="sf-expire-ingredient-header">
+                        <div>
+                            <h3>Milk</h3>
+                            <p>1 bottle</p>
+                        </div>
+
+                        <div class="sf-expire-time-pill sf-expire-time-pill-danger">
+                            Expires tomorrow
+                        </div>
+                    </div>
+
+                    <div class="sf-expire-suggestion">
+                        Use in creamy pasta recipes or a quick breakfast bake.
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-expire-ingredient-card sf-expire-warning">
+                <div class="sf-expire-accent"></div>
+
+                <div class="sf-expire-ingredient-icon">🍅</div>
+
+                <div class="sf-expire-ingredient-body">
+                    <div class="sf-expire-ingredient-header">
+                        <div>
+                            <h3>Tomatoes</h3>
+                            <p>5 medium</p>
+                        </div>
+
+                        <div class="sf-expire-time-pill sf-expire-time-pill-warn">
+                            2 days left
+                        </div>
+                    </div>
+
+                    <div class="sf-expire-suggestion">
+                        Best for tomato pasta, salsa, or a simple roasted soup base.
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-expire-ingredient-card sf-expire-warning">
+                <div class="sf-expire-accent"></div>
+
+                <div class="sf-expire-ingredient-icon">🥬</div>
+
+                <div class="sf-expire-ingredient-body">
+                    <div class="sf-expire-ingredient-header">
+                        <div>
+                            <h3>Spinach</h3>
+                            <p>1 bag</p>
+                        </div>
+
+                        <div class="sf-expire-time-pill sf-expire-time-pill-warn">
+                            2 days left
+                        </div>
+                    </div>
+
+                    <div class="sf-expire-suggestion">
+                        Fold into stir fry, eggs, or pasta before the leaves lose texture.
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Rescue Recipes</div>
+                <h2>Problem to solution, immediately</h2>
+            </div>
+        </div>
+
+        <div class="sf-expire-recipes-grid">
+            <article class="sf-expire-recipe-card">
+                <img src="images/recipe1.svg" alt="Recipe suggestion" />
+
+                <div class="sf-expire-recipe-body">
+                    <div class="sf-match-tag">Best for tomatoes</div>
+                    <h3>Tomato Pasta</h3>
+                    <p>Fast, pantry-friendly, and ideal for using soft tomatoes before tomorrow.</p>
+                </div>
+            </article>
+
+            <article class="sf-expire-recipe-card">
+                <img src="images/recipe2.svg" alt="Recipe suggestion" />
+
+                <div class="sf-expire-recipe-body">
+                    <div class="sf-match-tag">Best for spinach</div>
+                    <h3>Fresh Stir Fry</h3>
+                    <p>A quick way to rescue greens and combine them with other ingredients already at home.</p>
+                </div>
+            </article>
+
+            <article class="sf-expire-recipe-card">
+                <div class="sf-expire-recipe-illustration">🥣</div>
+
+                <div class="sf-expire-recipe-body">
+                    <div class="sf-match-tag">Best for milk</div>
+                    <h3>Creamy Pantry Soup</h3>
+                    <p>Use dairy and vegetables together in one forgiving meal with almost no waste.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+</DashboardShell>

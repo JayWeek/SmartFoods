@@ -49,7 +49,7 @@ This approach allows:
 | Architecture Plan    | COMPLETE    |
 | Tech Stack Decisions | COMPLETE    |
 | Solution Structure   | COMPLETE    |
-| UI Design            | NOT STARTED |
+| UI Design            | IN PROGRESS |
 | Backend Logic        | NOT STARTED |
 | Database             | NOT STARTED |
 | Authentication       | NOT STARTED |
@@ -65,7 +65,7 @@ This approach allows:
 ## ACTIVE PHASE
 
 ```text
-Phase 1 — Project Setup & Foundation
+Phase 3 — Static UI Implementation
 ```
 
 ---
@@ -86,7 +86,7 @@ Create a stable, clean, scalable project foundation.
 
 ## 1.1 Create Solution
 
-Status: NOT STARTED
+Status: IN PROGRESS
 
 Tasks:
 
@@ -244,7 +244,7 @@ Success Criteria:
 
 # PHASE 2 — UI/UX DESIGN & WIREFRAMING
 
-Status: NOT STARTED
+Status: IN PROGRESS
 
 Goal:
 
@@ -258,7 +258,7 @@ Design the full user experience before implementing backend logic.
 
 | Screen        | Status      |
 | ------------- | ----------- |
-| Landing Page  | NOT STARTED |
+| Landing Page  | COMPLETE    |
 | Login Page    | NOT STARTED |
 | Register Page | NOT STARTED |
 
@@ -268,7 +268,7 @@ Design the full user experience before implementing backend logic.
 
 | Screen                 | Status      |
 | ---------------------- | ----------- |
-| Pantry Dashboard       | NOT STARTED |
+| Pantry Dashboard       | IN PROGRESS |
 | Add Pantry Item Modal  | NOT STARTED |
 | Edit Pantry Item Modal | NOT STARTED |
 | Recipe Search Page     | NOT STARTED |
@@ -331,7 +331,7 @@ Dashboard should prioritize:
 
 # PHASE 3 — STATIC UI IMPLEMENTATION
 
-Status: NOT STARTED
+Status: IN PROGRESS
 
 Goal:
 
@@ -363,12 +363,12 @@ Only:
 
 | Component              | Status      |
 | ---------------------- | ----------- |
-| Navbar                 | NOT STARTED |
-| Sidebar                | NOT STARTED |
+| Navbar                 | COMPLETE    |
+| Sidebar                | IN PROGRESS |
 | Pantry Item Card       | NOT STARTED |
-| Expiration Badge       | NOT STARTED |
-| Recipe Card            | NOT STARTED |
-| Dashboard Stats Cards  | NOT STARTED |
+| Expiration Badge       | IN PROGRESS |
+| Recipe Card            | IN PROGRESS |
+| Dashboard Stats Cards  | IN PROGRESS |
 | Empty State Components | NOT STARTED |
 | Loading Components     | NOT STARTED |
 

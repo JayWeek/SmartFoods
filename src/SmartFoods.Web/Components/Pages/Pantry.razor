@@ -1,0 +1,193 @@
+@page "/dashboard/pantry"
+@layout MainLayout
+
+<PageTitle>SmartFoods | Pantry</PageTitle>
+
+<DashboardShell>
+    <section class="sf-pantry-workspace">
+        <div class="sf-pantry-hero">
+            <div class="sf-pantry-hero-copy">
+                <div class="sf-page-kicker">Inventory management mode</div>
+                <h1>Your pantry, organized like a beautifully managed fridge.</h1>
+                <p>
+                    Keep ingredients sorted, visible, and easy to maintain so your kitchen feels controlled instead of chaotic.
+                </p>
+            </div>
+
+            <button class="sf-primary-button sf-pantry-desktop-add">
+                + Add Ingredient
+            </button>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Pantry Summary</div>
+                <h2>Pantry health at a glance</h2>
+            </div>
+        </div>
+
+        <div class="sf-pantry-summary-grid">
+            <article class="sf-pantry-summary-card">
+                <div class="sf-pantry-summary-label">Fresh</div>
+                <div class="sf-pantry-summary-value sf-pantry-summary-value-fresh">18</div>
+                <div class="sf-pantry-progress">
+                    <div class="sf-pantry-progress-bar sf-pantry-progress-bar-fresh" style="width: 72%"></div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-summary-card">
+                <div class="sf-pantry-summary-label">Expiring</div>
+                <div class="sf-pantry-summary-value sf-pantry-summary-value-warn">6</div>
+                <div class="sf-pantry-progress">
+                    <div class="sf-pantry-progress-bar sf-pantry-progress-bar-warn" style="width: 24%"></div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-summary-card">
+                <div class="sf-pantry-summary-label">Expired</div>
+                <div class="sf-pantry-summary-value sf-pantry-summary-value-danger">2</div>
+                <div class="sf-pantry-progress">
+                    <div class="sf-pantry-progress-bar sf-pantry-progress-bar-danger" style="width: 8%"></div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-pantry-search-row">
+            <input class="sf-pantry-search" placeholder="Search ingredients..." />
+        </div>
+
+        <div class="sf-filter-row sf-pantry-filter-row">
+            <button class="sf-filter-pill sf-pantry-filter-pill sf-pantry-filter-pill-active">Vegetables</button>
+            <button class="sf-filter-pill sf-pantry-filter-pill">Dairy</button>
+            <button class="sf-filter-pill sf-pantry-filter-pill">Frozen</button>
+            <button class="sf-filter-pill sf-pantry-filter-pill">Protein</button>
+            <button class="sf-filter-pill sf-pantry-filter-pill">Spices</button>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Ingredient Categories</div>
+                <h2>Everything in its place</h2>
+            </div>
+        </div>
+
+        <div class="sf-pantry-category-grid">
+            <div class="sf-pantry-category-card">
+                <div class="sf-pantry-category-icon">🥬</div>
+                <h3>Vegetables</h3>
+                <p>Leafy greens, roots, and all the quick-to-expire essentials.</p>
+            </div>
+
+            <div class="sf-pantry-category-card">
+                <div class="sf-pantry-category-icon">🥛</div>
+                <h3>Dairy</h3>
+                <p>Milk, yogurt, cheese, and items that need closer shelf-life tracking.</p>
+            </div>
+
+            <div class="sf-pantry-category-card">
+                <div class="sf-pantry-category-icon">🧂</div>
+                <h3>Spices</h3>
+                <p>Flavor boosters that round out meals and help pantry recipes feel complete.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Ingredient Grid</div>
+                <h2>Current pantry inventory</h2>
+            </div>
+        </div>
+
+        <div class="sf-pantry-grid-list">
+            <article class="sf-pantry-item-card">
+                <div class="sf-pantry-item-icon">🥬</div>
+                <div class="sf-pantry-item-body">
+                    <div class="sf-pantry-item-top">
+                        <div>
+                            <h3>Spinach</h3>
+                            <p>1 bag · Vegetables</p>
+                        </div>
+                        <span class="sf-pantry-status sf-pantry-status-warn">Expiring soon</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-item-card">
+                <div class="sf-pantry-item-icon">🥛</div>
+                <div class="sf-pantry-item-body">
+                    <div class="sf-pantry-item-top">
+                        <div>
+                            <h3>Milk</h3>
+                            <p>1 bottle · Dairy</p>
+                        </div>
+                        <span class="sf-pantry-status sf-pantry-status-danger">Expires tomorrow</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-item-card">
+                <div class="sf-pantry-item-icon">🍗</div>
+                <div class="sf-pantry-item-body">
+                    <div class="sf-pantry-item-top">
+                        <div>
+                            <h3>Chicken Breast</h3>
+                            <p>2 pieces · Protein</p>
+                        </div>
+                        <span class="sf-pantry-status sf-pantry-status-fresh">Fresh</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-item-card">
+                <div class="sf-pantry-item-icon">🧂</div>
+                <div class="sf-pantry-item-body">
+                    <div class="sf-pantry-item-top">
+                        <div>
+                            <h3>Paprika</h3>
+                            <p>1 jar · Spices</p>
+                        </div>
+                        <span class="sf-pantry-status sf-pantry-status-fresh">Fresh</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-item-card">
+                <div class="sf-pantry-item-icon">🥦</div>
+                <div class="sf-pantry-item-body">
+                    <div class="sf-pantry-item-top">
+                        <div>
+                            <h3>Broccoli</h3>
+                            <p>2 heads · Vegetables</p>
+                        </div>
+                        <span class="sf-pantry-status sf-pantry-status-warn">2 days left</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="sf-pantry-item-card">
+                <div class="sf-pantry-item-icon">🧊</div>
+                <div class="sf-pantry-item-body">
+                    <div class="sf-pantry-item-top">
+                        <div>
+                            <h3>Frozen Peas</h3>
+                            <p>1 bag · Frozen</p>
+                        </div>
+                        <span class="sf-pantry-status sf-pantry-status-fresh">Stable</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <button class="sf-pantry-fab" aria-label="Quick add ingredient">
+        +
+    </button>
+</DashboardShell>

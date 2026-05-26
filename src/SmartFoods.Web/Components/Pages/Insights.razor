@@ -1,0 +1,163 @@
+@page "/dashboard/insights"
+@layout MainLayout
+
+<PageTitle>SmartFoods | Weekly Insights</PageTitle>
+
+<DashboardShell>
+    <section class="sf-insights-mode">
+        <div class="sf-insights-hero">
+            <div class="sf-insights-hero-copy">
+                <div class="sf-page-kicker">Reflection and motivation</div>
+                <h1>You reduced food waste by 32% this week 🎉</h1>
+                <p>
+                    Your pantry habits are moving in the right direction. Small, consistent choices are saving money and rescuing more ingredients each week.
+                </p>
+            </div>
+
+            <div class="sf-insights-hero-reward">
+                <div class="sf-insights-reward-label">Estimated money saved</div>
+                <div class="sf-insights-reward-value">$18.40</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Waste Reduction Chart</div>
+                <h2>Progress, not pressure</h2>
+            </div>
+        </div>
+
+        <div class="sf-insights-chart-grid">
+            <article class="sf-insights-chart-card">
+                <div class="sf-insights-chart-title">Waste trend this week</div>
+
+                <div class="sf-insights-line-chart">
+                    <div class="sf-insights-line-grid"></div>
+                    <svg viewBox="0 0 320 180" class="sf-insights-line-svg" preserveAspectRatio="none" aria-hidden="true">
+                        <path d="M20 135 C55 115, 75 118, 100 96 S155 70, 180 76 S235 88, 260 58 S292 40, 300 34"
+                              class="sf-insights-line-path" />
+                        <circle cx="20" cy="135" r="4" class="sf-insights-line-dot" />
+                        <circle cx="100" cy="96" r="4" class="sf-insights-line-dot" />
+                        <circle cx="180" cy="76" r="4" class="sf-insights-line-dot" />
+                        <circle cx="260" cy="58" r="4" class="sf-insights-line-dot" />
+                        <circle cx="300" cy="34" r="4" class="sf-insights-line-dot sf-insights-line-dot-strong" />
+                    </svg>
+                </div>
+
+                <div class="sf-insights-axis-labels">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                </div>
+            </article>
+
+            <article class="sf-insights-chart-card sf-insights-donut-card">
+                <div class="sf-insights-chart-title">Weekly ingredient outcomes</div>
+
+                <div class="sf-insights-donut-wrap">
+                    <div class="sf-insights-donut">
+                        <div class="sf-insights-donut-center">
+                            <strong>78%</strong>
+                            <span>saved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sf-insights-donut-legend">
+                    <div><span class="sf-insights-legend-dot sf-insights-legend-dot-green"></span> Used well</div>
+                    <div><span class="sf-insights-legend-dot sf-insights-legend-dot-mint"></span> Saved for later</div>
+                    <div><span class="sf-insights-legend-dot sf-insights-legend-dot-soft"></span> Wasted</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Ingredients Saved</div>
+                <h2>What you rescued this week</h2>
+            </div>
+        </div>
+
+        <div class="sf-insights-saved-grid">
+            <article class="sf-insights-saved-card">
+                <div class="sf-insights-saved-icon">🍅</div>
+                <div class="sf-insights-saved-value">5</div>
+                <div class="sf-insights-saved-label">Tomatoes used before spoilage</div>
+            </article>
+
+            <article class="sf-insights-saved-card">
+                <div class="sf-insights-saved-icon">🥬</div>
+                <div class="sf-insights-saved-value">3</div>
+                <div class="sf-insights-saved-label">Greens rescued for meals</div>
+            </article>
+
+            <article class="sf-insights-saved-card">
+                <div class="sf-insights-saved-icon">🥛</div>
+                <div class="sf-insights-saved-value">2</div>
+                <div class="sf-insights-saved-label">Dairy items used on time</div>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Recipe Usage Trends</div>
+                <h2>How your cooking habits are evolving</h2>
+            </div>
+        </div>
+
+        <div class="sf-insights-trends-list">
+            <article class="sf-insights-trend-row">
+                <div>
+                    <div class="sf-insights-trend-title">Quick meals were your top pattern</div>
+                    <div class="sf-insights-trend-meta">6 quick recipes cooked this week</div>
+                </div>
+                <span class="sf-insights-trend-badge">Most used</span>
+            </article>
+
+            <article class="sf-insights-trend-row">
+                <div>
+                    <div class="sf-insights-trend-title">Vegetable-based recipes increased</div>
+                    <div class="sf-insights-trend-meta">Up 18% from last week</div>
+                </div>
+                <span class="sf-insights-trend-badge">Improving</span>
+            </article>
+        </div>
+    </section>
+
+    <section class="sf-section">
+        <div class="sf-section-header">
+            <div>
+                <div class="sf-section-kicker">Achievements / Streaks</div>
+                <h2>Quiet rewards that keep momentum going</h2>
+            </div>
+        </div>
+
+        <div class="sf-insights-achievements">
+            <article class="sf-achievement-card">
+                <div class="sf-achievement-icon">🔥</div>
+                <h3>3-Day No Waste Streak</h3>
+                <p>You kept the kitchen efficient for three days in a row.</p>
+            </article>
+
+            <article class="sf-achievement-card">
+                <div class="sf-achievement-icon">🍽️</div>
+                <h3>10 Recipes Cooked</h3>
+                <p>Your saved and suggested recipes turned into real meals this week.</p>
+            </article>
+
+            <article class="sf-achievement-card">
+                <div class="sf-achievement-icon">🌿</div>
+                <h3>5 Ingredients Saved</h3>
+                <p>You rescued five ingredients that might otherwise have been lost.</p>
+            </article>
+        </div>
+    </section>
+</DashboardShell>

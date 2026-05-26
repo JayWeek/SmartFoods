@@ -1,0 +1,61 @@
+.dashboard-overview {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(239, 253, 242, 0.92));
+    border: 1px solid rgba(17, 56, 31, 0.08);
+    box-shadow: var(--sf-shadow-card);
+}
+
+.dashboard-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.02;
+    margin: 1rem 0 0;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    max-width: 42rem;
+}
+
+.dashboard-subtitle {
+    margin: 0.9rem 0 0;
+    max-width: 40rem;
+    line-height: 1.65;
+}
+
+.dashboard-overview-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
+.dashboard-overview-metric {
+    display: grid;
+    gap: 0.2rem;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(17, 56, 31, 0.06);
+}
+
+.dashboard-overview-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.dashboard-overview-label {
+    color: var(--sf-gray-500);
+    font-size: 0.82rem;
+}
+
+@media (min-width: 900px) {
+    .dashboard-overview {
+        grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+        align-items: end;
+    }
+
+    .dashboard-overview-metrics {
+        align-self: stretch;
+    }
+}

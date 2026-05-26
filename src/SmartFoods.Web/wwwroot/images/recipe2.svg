@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Veggie Stir Fry</title>
+  <desc id="desc">A stylized bowl of vegetable stir fry.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#effdf2"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="url(#bg2)"/>
+  <ellipse cx="80" cy="100" rx="48" ry="24" fill="#ffffff"/>
+  <ellipse cx="80" cy="95" rx="42" ry="17" fill="#ece7d7"/>
+  <path d="M48 92c8-8 20-14 32-14 16 0 27 7 32 14" fill="none" stroke="#48cb73" stroke-width="7" stroke-linecap="round"/>
+  <path d="M52 103c12-8 21-10 28-10 11 0 23 5 30 10" fill="none" stroke="#82e2a3" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="58" cy="85" r="6" fill="#d97706"/>
+  <circle cx="78" cy="78" r="5" fill="#e05b5b"/>
+  <circle cx="98" cy="84" r="6" fill="#23b457"/>
+  <circle cx="108" cy="96" r="5" fill="#f4b14a"/>
+  <path d="M50 44c14-8 45-9 61 5" fill="none" stroke="#10231b" stroke-width="5" stroke-linecap="round" opacity=".22"/>
+</svg>

@@ -1,0 +1,38 @@
+<section class="dashboard-panel animate-fade-in dashboard-sticky">
+    <div class="dashboard-panel-head dashboard-panel-head-stack">
+        <div>
+            <h2 class="dashboard-panel-title text-green-600">
+                Quick Add
+            </h2>
+            <p class="text-gray-600">A fast capture form for when groceries change during the week.</p>
+        </div>
+    </div>
+
+
+    <input class="dashboard-input w-full"
+           placeholder="Add ingredient..." />
+
+    <select class="dashboard-input w-full mt-2" aria-label="Category">
+        <option value="">Select category...</option>
+        <option value="dairy">Dairy</option>
+        <option value="vegetable">Vegetable</option>
+        <option value="fruit">Fruit</option>
+        <option value="meat">Meat</option>
+        <option value="grain">Grain</option>
+        <option value="seafood">Seafood</option>
+        <option value="beverage">Beverage</option>
+        <option value="snack">Snack</option>
+        <option value="condiment">Condiment</option>
+        <option value="frozen">Frozen</option>
+        <option value="other">Other</option>
+    </select>
+
+    <div class="grid dashboard-grid-2 gap-2 mt-3">
+        <input class="dashboard-input" placeholder="Qty" />
+        <input class="dashboard-input" placeholder="Expiry" />
+    </div>
+
+    <button class="dashboard-button mt-3 w-full">
+        Save Item
+    </button>
+</section>
