@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SmartFoods.Application/SmartFoods.Application.csproj" />
+    <Project Path="src/SmartFoods.Domain/SmartFoods.Domain.csproj" />
+    <Project Path="src/SmartFoods.Infrastructure/SmartFoods.Infrastructure.csproj" />
+    <Project Path="src/SmartFoods.Web/SmartFoods.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SmartFoods.IntegrationTests/SmartFoods.IntegrationTests.csproj" />
+    <Project Path="tests/SmartFoods.UnitTests/SmartFoods.UnitTests.csproj" />
+  </Folder>
+</Solution>

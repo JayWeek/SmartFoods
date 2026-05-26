@@ -1,0 +1,55 @@
+# .gitignore for SmartFoods (.NET, Blazor, EF Core, etc.)
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+
+# Test results
+TestResults/
+
+# EF Core Migrations snapshots
+Migrations/*Snapshot.cs
+
+# Publish output
+publish/
+
+# Local secrets
+secrets.json
+appsettings.Development.json
+
+# Node/Tailwind (if used)
+node_modules/
+
+# Others
+*.swp
+*.bak
+*.tmp
+
+# Ignore generated docs
+/docs/api-contracts.md
+/docs/database-design.md
