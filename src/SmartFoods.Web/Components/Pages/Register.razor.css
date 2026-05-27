@@ -103,7 +103,9 @@
     font-size: 0.95rem;
 }
 
-.form-group input {
+/* Added ::deep to reach native inputs generated inside Blazor components */
+.form-group input,
+.form-group ::deep input {
     width: 100%;
     border: 1px solid rgba(17,56,31,0.1);
     background: rgba(255,255,255,0.92);
@@ -115,7 +117,9 @@
     transition: all 180ms ease;
 }
 
-.form-group input:focus {
+/* Added ::deep to focus states of component-rendered inputs */
+.form-group input:focus,
+.form-group ::deep input:focus {
     border-color: var(--sf-green-400);
     box-shadow: 0 0 0 4px rgba(35,180,87,0.12);
 }
@@ -168,6 +172,14 @@
 .auth-footer a {
     color: var(--sf-green-600);
     font-weight: 700;
+}
+
+.auth-error {
+    background: rgba(255, 0, 0, 0.08);
+    color: #b42318;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 0.95rem;
 }
 
 @media (max-width: 980px) {

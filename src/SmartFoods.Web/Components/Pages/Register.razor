@@ -1,5 +1,49 @@
 @page "/register"
 @layout MainLayout
+@using Microsoft.AspNetCore.Identity
+@using SmartFoods.Web.Data
+@using SmartFoods.Web.Models
+
+@inject UserManager<ApplicationUser> UserManager
+@inject NavigationManager Navigation
+
+@code {
+    // Added SupplyParameterFromForm to cleanly bind input data on postback
+    [SupplyParameterFromForm]
+    public RegisterModel model { get; set; } = new();
+    
+    private string? errorMessage;
+
+    private async Task HandleRegistration()
+    {
+        errorMessage = null;
+
+        var user = new ApplicationUser
+        {
+            FullName = $"{model.FirstName} {model.LastName}".Trim(),
+            UserName = model.Email,
+            Email = model.Email
+        };
+
+        var result = await UserManager.CreateAsync(
+            user,
+            model.Password
+        );
+
+        if (result.Succeeded)
+        {
+            // Redirect straight to the login page instead of signing them in immediately
+            Navigation.NavigateTo("/login");
+        }
+        else
+        {
+            errorMessage = string.Join(
+                ", ",
+                result.Errors.Select(x => x.Description)
+            );
+        }
+    }
+}
 
 <PageTitle>Get Started | SmartFoods</PageTitle>
 
@@ -25,47 +69,73 @@
                     </p>
                 </div>
 
-                <form class="auth-form">
+                <EditForm Model="model" OnValidSubmit="HandleRegistration" FormName="RegisterForm" class="auth-form">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    
+                    <!-- Your perfect split-grid layout is now completely untouched -->
                     <div class="split-grid">
                         <div class="form-group">
                             <label>First Name</label>
-                            <input type="text" placeholder="John" />
+                            <input type="text"
+                                   @bind-value="model.FirstName"
+                                   name="model.FirstName"
+                                   placeholder="John" />
                         </div>
 
                         <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" placeholder="Doe" />
+                            <input type="text"
+                                   @bind-value="model.LastName"
+                                   name="model.LastName"
+                                   placeholder="Doe" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Email Address</label>
-                        <input type="email" placeholder="you@example.com" />
+                        <input type="email" 
+                               @bind-value="model.Email" 
+                               name="model.Email"
+                               placeholder="you@example.com" />
                     </div>
 
                     <div class="split-grid">
                         <div class="form-group">
                             <label>Password</label>
-                            <input type="password" placeholder="Create password" />
+                            <input type="password" 
+                                   @bind-value="model.Password" 
+                                   name="model.Password"
+                                   placeholder="Create password" />
                         </div>
 
                         <div class="form-group">
                             <label>Confirm Password</label>
-                            <input type="password" placeholder="Confirm password" />
+                            <input type="password" 
+                                   @bind-value="model.ConfirmPassword" 
+                                   name="model.ConfirmPassword"
+                                   placeholder="Confirm password" />
                         </div>
                     </div>
 
                     <label class="remember-row terms-row">
-                        <input type="checkbox" />
+                        <input type="checkbox" required />
                         <span>
                             I agree to the Terms of Service and Privacy Policy
                         </span>
                     </label>
 
+                    @if (!string.IsNullOrWhiteSpace(errorMessage))
+                    {
+                        <div class="auth-error" style="color: #dc3545; font-weight: 600; font-size: 0.95rem;">
+                            @errorMessage
+                        </div>
+                    }
+
                     <button type="submit" class="auth-button">
                         Create Account
                     </button>
-                </form>
+                </EditForm>
 
                 <div class="auth-footer">
                     Already have an account?
