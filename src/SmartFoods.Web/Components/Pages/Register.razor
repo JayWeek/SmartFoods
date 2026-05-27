@@ -1,0 +1,116 @@
+@page "/register"
+@layout MainLayout
+
+<PageTitle>Get Started | SmartFoods</PageTitle>
+
+<Navbar />
+
+<div class="auth-page bg-gradient-to-b from-white via-green-50 to-white">
+    <div class="register-shell">
+
+        <div class="register-card landing-glass shadow-xl">
+            <div class="landing-orb orb-a"></div>
+            <div class="landing-orb orb-b"></div>
+
+            <div class="auth-card-content">
+                <div class="auth-header">
+                    <div class="landing-chip">
+                        Smart kitchen onboarding
+                    </div>
+
+                    <h2>Create your SmartFoods account</h2>
+
+                    <p>
+                        Start managing your pantry smarter and reduce unnecessary food waste.
+                    </p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="split-grid">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="you@example.com" />
+                    </div>
+
+                    <div class="split-grid">
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Create password" />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Confirm password" />
+                        </div>
+                    </div>
+
+                    <label class="remember-row terms-row">
+                        <input type="checkbox" />
+                        <span>
+                            I agree to the Terms of Service and Privacy Policy
+                        </span>
+                    </label>
+
+                    <button type="submit" class="auth-button">
+                        Create Account
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    Already have an account?
+                    <a href="/login">Login</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="register-side">
+            <div class="landing-chip">
+                Why SmartFoods?
+            </div>
+
+            <h1>
+                Build a smarter,
+                more sustainable kitchen.
+            </h1>
+
+            <p>
+                SmartFoods helps households reduce food waste using pantry intelligence,
+                expiration tracking, and personalized recipe suggestions.
+            </p>
+
+            <div class="feature-stack">
+                <div class="feature-panel">
+                    <div>
+                        <h3>Track pantry inventory</h3>
+                        <p>Organize ingredients in one clean dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="feature-panel">
+                    <div>
+                        <h3>Receive expiry alerts</h3>
+                        <p>Know exactly what needs to be used first.</p>
+                    </div>
+                </div>
+
+                <div class="feature-panel">
+                    <div>
+                        <h3>Discover intelligent recipes</h3>
+                        <p>Cook meals using what you already own.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

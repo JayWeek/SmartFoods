@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddMudServices();
+builder.Services.AddScoped<SmartFoods.Web.Services.Pantry.PantryService>();
 
 var app = builder.Build();
 

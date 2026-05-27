@@ -1,0 +1,109 @@
+@page "/login"
+@layout MainLayout
+
+<PageTitle>Login | SmartFoods</PageTitle>
+
+<Navbar />
+
+<div class="auth-page bg-gradient-to-b from-white via-green-50 to-white">
+    <div class="auth-shell">
+
+        <div class="auth-hero">
+            <div class="landing-chip">
+                Smart pantry intelligence
+            </div>
+
+            <h1>
+                Welcome back to
+                <span>SmartFoods</span>
+            </h1>
+
+            <p>
+                Continue tracking ingredients, reducing waste,
+                and discovering recipes built around what you already have.
+            </p>
+
+            <div class="auth-benefits">
+                <div class="auth-benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <div>
+                        <h3>Expiration tracking</h3>
+                        <p>Never forget ingredients hidden in your pantry.</p>
+                    </div>
+                </div>
+
+                <div class="auth-benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <div>
+                        <h3>Smart recipe recommendations</h3>
+                        <p>Cook using ingredients you already own.</p>
+                    </div>
+                </div>
+
+                <div class="auth-benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <div>
+                        <h3>Waste reduction insights</h3>
+                        <p>Understand your weekly food usage trends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-card landing-glass shadow-xl">
+            <div class="landing-orb orb-a"></div>
+            <div class="landing-orb orb-b"></div>
+
+            <div class="auth-card-content">
+                <div class="auth-header">
+                    <h2>Login</h2>
+                    <p>Access your pantry dashboard</p>
+                </div>
+
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="you@example.com" />
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" placeholder="Enter your password" />
+                    </div>
+
+                    <div class="form-row">
+                        <label class="remember-row">
+                            <input type="checkbox" />
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="auth-button">
+                        Login to Dashboard
+                    </button>
+                </form>
+
+                <div class="auth-divider">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-grid">
+                    <button class="social-button">
+                        Google
+                    </button>
+
+                    <button class="social-button">
+                        Apple
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    Don't have an account?
+                    <a href="/register">Get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
